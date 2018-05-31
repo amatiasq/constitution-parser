@@ -42,7 +42,7 @@ class ConstitutionSection {
 
     getFileName() {
         return this.hasSections
-            ? path.join(this.root, 'Index.md')
+            ? path.join(this.root, 'README.md')
             : `${this.root}.md`;
     }
 
