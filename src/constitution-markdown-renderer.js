@@ -40,10 +40,26 @@ class ConstitutionSection {
         return this.sections.length !== 0;
     }
 
-    getFileName() {
+    get filename() {
         return this.hasSections
             ? path.join(this.root, 'README.md')
             : `${this.root}.md`;
+    }
+
+    get rootUrl() {
+        return this.root.replace(/ /g, '%20');
+    }
+
+    get url() {
+        return this.filename.replace(/ /g, '%20');
+    }
+
+    get link() {
+        const text = this.subtitle
+            ? `${this.title}: ${this.subtitle}`
+            : this.title;
+
+        return `[${text}](${this.url})`;
     }
 
     getChildPath(name) {
@@ -60,17 +76,9 @@ class ConstitutionSection {
             Object.assign(files, section.getFiles());
         }
 
-        files[this.getFileName()] = this.getFileContent();
+        files[this.filename] = this.getFileContent();
 
         return files;
-    }
-
-    get link() {
-        const text = this.subtitle
-            ? `${this.title}: ${this.subtitle}`
-            : this.title;
-
-        return `[${text}](${this.getFileName()})`;
     }
 
     getIndex() {
@@ -113,7 +121,7 @@ class ConstitutionSection {
 
             for (const item of entry.getIndex()) {
                 wasIndex = true;
-                content.push(item.replace(this.root, '.'));
+                content.push(item.replace(this.rootUrl, '.'));
             }
         }
 
