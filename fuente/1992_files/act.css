@@ -1,0 +1,484 @@
+
+h2.resaltada {
+  color: #fff;
+  background-color: #123a63;
+  min-width: 860px;
+  text-align: center;
+  padding: .2em 0;
+  margin:0;
+  background-image: url(../imagenes/bkgSumarioBOE.gif);
+  background-repeat:repeat-x;
+  background-position: 0% 0%;
+  border: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+}
+/* ----- "Ajuste width para fuentes grandes" */
+div#contenedor {
+   width:72em;
+   /*width:72em;*/
+   max-width:80%;
+   
+}
+h2.resaltada {
+  min-width: 60%;
+}
+/*Fin de "Ajuste width para fuentes grandes" */
+
+h3 {
+  border-width: 0;
+}
+
+/* .etiqDoc { color: #123a63; font-weight:bold; } */
+
+.cabdispo {
+  padding: 0em 0em 1em;
+  margin: 0;
+  background-color: #fff;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+.cabdispo p.documento         { margin: 0.4em 2em; }
+.cabdispo p.documento strong  { margin: 0.7em 2em; }
+.cabdispo p.documento-tit     { font-size: 1.3em; font-weight: normal; margin: 0 0 0.5em 0; color: #000; padding: 1em 1.5em; border-top: none;
+                                border-bottom: 1px solid #aaa; background-color: #f8f8f8; text-align: justify; }
+.cabdispo p.etiqDoc           { clear: left; float: left; color: #123a63; font-weight:bold; width: 10em; margin: 0.2em 0 0.2em 2em;
+                                padding: 0 0.15em 0 0; text-align: right; }
+.cabdispo p.valDoc            { float: left; margin: 0.2em; padding: 0; text-align: left; }
+.cabdispo form                { clear: left; margin: 0 1em; padding: 0; text-align: right; }
+
+.derogada { margin: 0; padding: 0; text-align: center; color: #b00; font-weight: bold; font-size: 1.1em }
+
+.fondo_rojo     { background-color: #FF6600; }
+.fondo_verde    { background-color: #99CC00; }
+.fondo_amarillo { background-color: #FFFF66; }
+.fondo_oscuro   { background-color: #D6D6D6; }
+
+.pretexto p.ayudaBD  { margin: 0.5em 0 0 0;  }
+.aviso               { color: #C10012; font-weight:bold; }
+.subrayado          { text-decoration: underline; }
+
+div.redaccion p.documento.aviso{
+	margin-top: 1em;
+}
+
+.subtitMostrado { text-transform: none; }
+@media screen
+{
+.subtitMostrado { display: none; }
+}
+
+/*documentos web------------(juan)---*/
+#BDdoc { padding: 0; margin: 0 2em; background-color: transparent; border-width: 0 }
+
+#textoindice           { background:transparent; padding: 1em 3em 1em 6em; border-top: 1px solid #ccc; }
+#textoindice a:link    { color: blue; text-decoration: none; }
+#textoindice a:visited { color: purple; text-decoration: none; }
+#textoindice a:hover   { color: blue; text-decoration: underline; }
+#textoindice h3        { text-align: center; font-size: 1.5em; padding-top: 0em; padding-bottom: 0.5em; margin-top: 0.5em; color: #123a63; }
+#textoindice p         { margin: 1em 0 0 0; font-weight: bold; }
+#textoindice blockquote p { margin: 0.75em 0; font-weight: normal; }
+#textoindice blockquote p.parrafo_2 { margin: 1.5em 0 0.75em 0;}
+
+#textoxslt { background: transparent; padding: 1em 0em; border-top: 1px solid #ccc; }
+.lista     { margin: 2.5em 0 0 0; color: #B00000; font-size: 87%; }
+.indice    { margin: 2.5em 0; }
+.lista2    { margin: 0; padding-bottom: 2em; color: #B00000; }
+.listagran { margin: 2em 0 0 0; color: #B00000; font-size: 117%; }
+
+
+#textoxslt p         { margin: 0.75em 0; }
+#textoxslt table p   { margin: 0; }
+#textoxslt p.cerrado { margin: 0; }
+#textoxslt p.normal  { margin: 0.75em 0; text-align: justify; }
+#textoxslt p.texto   { margin: 0.75em 0; text-indent: 1.5em; text-align: justify; }
+
+#textoxslt h2        { color: navy; }
+#textoxslt h3        { text-align: center; font-size: 1.5em; padding: 0; margin-top: 1em; color: #123a63; }
+#textoxslt h4        { margin: 1em 0 0 0; font-size: 85%; font-weight: normal; text-align: right; color: #B00000; border-top: 1px dashed #B00000;/*background: url(http://webdesa.boe.es/imagenes/conso/bkgCONSObloq.gif) no-repeat 0% 0%;*/ }
+
+
+#textoxslt p.nota       { margin: 0; font-size: 85%; font-weight:bold; color: black; }
+#textoxslt p.nota_ante  { margin: 0.5em 0 0 0; font-size: 110%; text-align: justify; color: black; }
+#textoxslt p.nota_pie   { display: list-item; margin: 0.5em 0 0 1em; font-size: 100%; font-weight: normal; color: black; text-align: justify; }
+#textoxslt p.pie_unico  { display: list-item; margin: 2.5em 0 0 2em; font-size: 87%; font-weight: bold; color: #B00000; text-align: left; }
+#textoxslt p.nota_pie_2 { margin: 0 0 0 2em; font-size: 100%; font-weight: normal; font-style: italic; color: black; text-align: justify; }
+
+/* Estilos de plantilla InDesign para el elemento p */
+#textoxslt p.libro_num         { margin: 3em 4em 0 4em;         text-align: center; }
+#textoxslt p.libro_tit         { margin: 0.75em 4em 0.75em 4em; text-align: center; font-weight: bold; }
+#textoxslt p.libro             { margin: 3em 4em 1em 4em;       text-align: center; font-weight: bold; }
+#textoxslt p.titulo_num        { margin: 2.5em 4em 0 4em;       text-align: center; }
+#textoxslt p.titulo_tit        { margin: 0.75em 4em 0.75em 4em; text-align: center; font-weight: bold; }
+#textoxslt p.titulo            { margin: 2.5em 4em 1em 4em;     text-align: center; font-weight: bold; }
+#textoxslt p.capitulo_num      { margin: 2em 4em 0 4em;         text-align: center; }
+#textoxslt p.capitulo_tit      { margin: 0.75em 4em 0.75em 4em; text-align: center; font-weight: bold; }
+#textoxslt p.capitulo          { margin: 2em 4em 1em 4em;       text-align: center; font-weight: bold; }
+#textoxslt p.seccion           { margin: 1.5em 4em 0.75em 4em;  text-align: center; font-style: italic; font-weight: bold; }
+#textoxslt p.subseccion        { margin: 1.5em 4em 0.75em 4em;  text-align: center; }
+#textoxslt p.articulo          { margin: 1.5em 0 0.75em 0;      font-weight: bold; }
+#textoxslt p.parrafo           { margin: 0.75em 0;              text-indent: 1.5em; text-align: justify; }
+#textoxslt p.parrafo_2         { margin: 1.5em 0 0.75em 0;      text-indent: 1.5em; text-align: justify; }
+#textoxslt p.centro_redonda    { margin: 2em 0 0.75em 0;        text-align: center; font-style: normal; font-weight: normal; }
+#textoxslt p.centro_cursiva    { margin: 2em 0 0.75em 0;        text-align: center; font-style: italic; font-weight: normal; }
+#textoxslt p.centro_negrita    { margin: 2em 0 0.75em 0;        text-align: center; font-style: normal; font-weight: bold; }
+#textoxslt p.anexo_num         { margin: 3em 4em 0 4em;         text-align: center; font-weight: bold; }
+#textoxslt p.anexo_tit         { margin: 0.75em 4em 0.75em 4em; text-align: center; font-weight: bold; }
+#textoxslt p.anexo             { margin: 3em 4em 1em 4em;       text-align: center; font-weight: bold; }
+#textoxslt p.sangrado          { margin: 0.75em 0 0.75em 4em;   text-align: justify; text-indent: 1.5em; }
+#textoxslt p.sangrado_2        { margin: 1.5em 0 0.75em 4em;    text-align: justify; text-indent: 1.5em; }
+#textoxslt p.sangrado_articulo { margin: 1.5em 0 0.75em 4em;    font-weight: bold; }
+#textoxslt p.tabla             { margin: 0; }
+#textoxslt p.tabla_ancha       { margin: 0; font-family: Arial Narrow, Helvetica Narrow, sans-serif; }
+#textoxslt p.firma_ministro    { margin: 0; text-align: center; }
+#textoxslt p.firma_rey         { margin: 1.5em 0 2em 0; text-align: right; }
+#textoxslt p.cita              { margin: 0.25em 0 0 0; font-size: 85%; font-style: normal ! important; color: #333 ! important; }
+#textoxslt p.cita_con_pleca    { margin: 0; padding: 0.25em 0 0 0; font-size: 85%; border-top: 1px dotted #bbb; font-style: normal; }
+#textoxslt p.publicado         { margin: 1.5em 0 0.75em 0;  text-align: center; font-style: italic; }
+#textoxslt p.imagen, #textoxslt p.imagen_girada { margin: 2em 0; text-align: center; }
+#textoxslt p.imagen2           { margin: 0.5em 0; text-align: center; }
+#textoxslt p.imagen3           { margin: 0.5em 0; text-align: right; }
+#textoxslt p.imagen2  img      { border: none; }
+#textoxslt p.imagen3  img      { border: none; }
+#textoxslt p.imagen_girada img {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    margin: -8em 0;
+}
+#textoxslt img.inline, #textoxslt p.parrafo img, #textoxslt p.parrafo_2 img  {
+     margin: 0; padding: 0; border: none; vertical-align:middle; }
+#textoxslt pre  {
+     margin: 0.75em 0; 
+     border:1px solid #a0b0c0; 
+     padding: 1em;
+     word-wrap: break-word;      /* IE 5.5-7 */
+     white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+     white-space: pre-wrap;      /* current browsers */
+     font-size: 100%;
+     font-family: monospace; }
+
+
+#textoxslt table                    { margin: 1em auto; background-color: transparent; }
+#textoxslt table th, #textoxslt table thead { background-image: none; background-color: #EFE7DE; }
+#textoxslt table.tabla              { margin: 2em auto; }
+#textoxslt table.tabla_ancha        {
+  margin: 2em auto 2em 50%; -moz-transform:translateX(-50%);
+  -ms-transform:translateX(-50%); transform:translateX(-50%);
+  -webkit-transform: translateX(-50%); -o-transform: translateX(-50%);
+  font-family: "Arial Narrow", "Helvetica Narrow", sans-serif; 
+  color: black; min-width:100%;
+}
+#textoxslt table.sinbordes          { margin: 1em auto; border: 0;}
+#textoxslt table.sinbordes td       { padding: 0.5em; border: 0; vertical-align: top; }
+
+#textoxslt th p.cabeza_tabla, #textoxslt td p.cabeza_tabla, #textoxslt thead td, #textoxslt th, #textoxslt th.cabeza_tabla, #textoxslt td.cabeza_tabla  { margin: 0; text-align: center; font-weight: bold; }
+
+#textoxslt td p.cuerpo_tabla_izq, #textoxslt td.cuerpo_tabla_izq, #textoxslt td.cuerpo_tabla_izq p:not([class]){text-align:left;}
+#textoxslt td p.cuerpo_tabla_centro, #textoxslt td.cuerpo_tabla_centro, #textoxslt td.cuerpo_tabla_centro p:not([class]) {text-align:center;}
+#textoxslt td p.cuerpo_tabla_der, #textoxslt td.cuerpo_tabla_der, #textoxslt td.cuerpo_tabla_der p:not([class]) {text-align:right;}  
+
+#textoxslt td, #textoxslt th {font-size:90%;margin:0;}
+#textoxslt td p, #textoxslt th p{margin:0;}
+
+/* Estilos antiguos */
+#textoxslt th p.t_cabeza_tabla        { margin: 0; text-align: center; font-weight:bold; }
+#textoxslt td p.t_cabeza_tabla        { margin: 0; text-align: center; font-weight:bold; }
+#textoxslt td p.t_cuerpo_tabla_normal { margin: 0; text-align: left; }
+#textoxslt p.citas                    { margin: 0; font-size: 85%; }
+
+/* Se conserva por razones históricas */
+#textoxslt td p.t_celda_d      { margin: 0; text-align: right; }
+
+/*Sombreado de celdas */
+#textoxslt td.sombra {background-color: #EFE7DE;} 
+
+/* Valores en los que se convierte el estilo 't_cuerpo_tabla_normal' */
+#textoxslt td p.t_celda_dcha   { margin: 0; text-align: right;  font-size: 90%; }
+#textoxslt td p.t_celda_izda   { margin: 0; text-align: left;   font-size: 90%; }
+#textoxslt td p.t_celda_cent   { margin: 0; text-align: center; font-size: 90%; }
+
+#textoxslt blockquote, #textoindice blockquote {
+	margin: 1.5em 0em;
+	padding: 1em 1.5em 1.5em 1.5em;
+	border: 1px solid #B00000;
+	background: #ffffdf;
+	font-size: 90%;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#textoxslt blockquote.docrel      { margin: 5em 0 2em 0; padding: 1em 1.5em 1.5em 1.5em; border: 1px solid #B00000; background: #f7f7ff; font-size: 100%; }
+#textoxslt blockquote.docrel p.capitulo { margin: 1em 4em; }
+#textoxslt blockquote.docrel p.inforel  { margin: 1em 4em 1.25em 4em; text-align: center; font-weight: bold; }
+#textoxslt blockquote.siempreSeVe, #textoxslt blockquote.notaInicial, #textoindice blockquote { margin: 1.5em 2em; padding: 1em 1.5em; border: 1px solid #A0A0A0; background: #f7f7ff; font-size: 85%; }
+#textoxslt blockquote.codigos     { margin: 1.5em 15em; padding: 0.5em 0; font-size: 85%; background: #fff; color: rgb(0,68,122); border-top: 3px solid rgb(0,68,122); border-bottom: 3px solid rgb(0,68,122); border-left: none; border-right: none; }
+#textoxslt blockquote.recuadro { margin: 1.5em 2em; padding: 1em 1.5em; border: 1px solid #000000; background: #ffffff; font-size: 100%;  border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; }
+
+#textoxslt hr         { margin: 0.5em 0; /* border: 1px dotted silver; */ }
+#textoxslt ul, ol     { margin: 0; padding: 0 0 0 1.5em; }
+#textoxslt ul li      { margin: 0 0 0 0.5em; list-style-type: square ! important; list-style-image: none ! important; color: black; }
+#textoxslt ol li      { margin: 0; /* font-size: 85%; */ }
+
+#textoxslt form.listagran { margin: 1em 0 1em 2.2em;/*text-align:center*/ }
+#textoxslt img            { margin: 0.25em; border: 1px solid #bbb; padding: 1em;  max-width: 69.5em; }
+#textoxslt img.imagen2 { margin: 0.15em; border: none; }
+#textoxslt img.formula {  margin: 0.15em; padding:0; border: none; vertical-align: middle;}
+
+
+
+/* Ocultar botón radio de jurisprudencia*/
+input[id^="btn_jur_"]{
+display: none;
+}
+
+/* Estilo botón clicable */
+input[id^="btn_jur_"] + label {
+display: block;
+/*margin: 0 auto;*/
+	margin: 0 auto -40px -50px;
+padding: 0;
+background: url(/imagenes/conso/img_juris.png) no-repeat 0% 0%;
+cursor: pointer;
+height: 24px;
+
+}
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="btn_jur_"]:checked + label {
+background: url(/imagenes/conso/img_juris_checked.png) no-repeat 0% 0%;
+}
+
+/* Estilo div (inicialmente oculto) */
+input[id^="btn_jur_"] ~ .jurisprudencia {
+/*width: 100%;*/
+height: 0;
+overflow: hidden;
+opacity: 0;
+margin: 0;
+}
+
+/* Estilo div cuando su INPUT está seleccionado */
+input[id^="btn_jur_"]:checked + label + .jurisprudencia {
+height: 100%;
+max-height: 100%;
+opacity: 1;
+	/*margin: 0 0 0 36px;*/
+	margin: 18px 0 0 0px;
+	padding: 1em 1.5em;
+	background-color: #eee;
+	font-size: 90%;
+	border: 1px solid #291071;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  /* transicion al desplegar */
+  -webkit-transition: all 1.5s ease;
+  -moz-transition:    all 1.5s ease;
+  -o-transition:      all 1.5s ease;
+  -ms-transition:     all 1.5s ease;
+  transition:         all 1.5s ease;
+}
+
+/* Solo para usar transicion al cerrar div - 
+ * Eliminar finalmente si se prescinde de la transicion
+*/
+input[id^="btn_jur_"]:not(:checked) + label + .jurisprudencia{
+  /* transicion al cerrar */
+  -webkit-transition: all .4s ease;
+  -moz-transition:    all .4s ease;
+  -o-transition:      all .4s ease;
+  -ms-transition:     all .4s ease;
+  transition:         all .4s ease;
+}
+
+#textoxslt .jurisprudencia ul li {
+	margin: .5em 1em;
+}
+
+
+/* pinchar en todo el bloque */
+
+#textoxslt ul.lista-sentencias li {
+  padding: 1em;
+  list-style-type: none !important;
+  list-style-position: outside;
+  list-style-image: none;
+  border-top: 1px solid #aaa;
+/*  border-top: 1px solid #123a63; */
+}
+li.resultado-sentencia {
+  position:relative;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+li.resultado-sentencia:hover {
+background-color:#efefef
+}
+
+li.resultado-sentencia a.link {
+  background-image: url(fake_image.gif); /* fake_image doesnt have to exist, this is a fix for IE */
+  display: block;
+  padding: 2em 1em;
+  position:absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  z-index: 40;
+  color:#000;
+  text-decoration: none;
+}
+#textoxslt li.resultado-sentencia p.resultado {
+  margin:2em 1em !important;  
+  padding: 1em;
+}
+#textoxslt li.resultado-sentencia p.datos {
+  padding:2em 0 0;
+}
+
+/* Fin pinchar en todo el bloque */
+
+
+
+@media print {
+  #BDdoc #textoxslt p { font-size: 1.2em; }
+}
+
+/* Los tres primeros están importados de eboe.css */
+.formato-anuncio dl dd dl dt   { float:left; padding-right:0.5em }
+.formato-anuncio dl dd dl dt   { font-weight:bold }
+.formato-anuncio dl dd         { margin:0.5em 3em }
+.formato-anuncio table         { margin: 1em auto; }
+.formato-anuncio p             { margin: 0; }
+.formato-anuncio p.normal      { margin: 0.75em 0; text-indent: 1.5em }
+
+
+#textoxslt .galeria_cont {
+  border:0px solid green;
+  text-align:center;
+}
+#textoxslt ul.galeria {
+  border:0px solid green;
+  width:55em;
+}
+#textoxslt .galeria_cont ul.galeria li {
+  border:0px solid red;
+  display:inline;
+  list-style-type: none !important;
+  padding:0 .5em;width:10em
+}
+#textoxslt .galeria_cont ul.galeria li {
+  border:0px solid red;
+  display:inline;
+  list-style-type: none !important;
+  padding:0 .5em;width:10em
+}
+#textoxslt ul.galeria li div {
+  display:block;
+}
+
+#doclist {float: right; margin: -3px 10em 0 0; padding: 0; }
+ul#doclist li {padding: 0 0 0 20px; line-height: 3em; display: block; float: left;}
+#doclist a {
+  margin: 0;
+  padding: 1px 0 0 24px;
+  background: no-repeat 0% 50%;
+  min-height: 20px;
+}
+#doclist .puntoPDF2  a { background-image: url(../imagenes/puntoPDF.gif) }
+#doclist .puntoEpub  a { background-image: url(../imagenes/enlacesEpub.gif) }
+#doclist .puntoAyuda a { background-image: url(../imagenes/bkgAyuda.png) }
+
+
+
+/* lista de pestañas */
+.navlist { /*border-bottom: 1px solid #ccc;*/ margin: 1em 0; padding-bottom: 1.35em; padding-left: 1em; /* border-left: 1px solid #aaa; border-right: 1px solid #aaa; */ }
+.navlist ul, .navlist li { display: inline; list-style-type: none; margin: 0; padding: 0; }
+.navlist a:link, 
+.navlist a:visited {
+  background: #E8EBF0;
+  border: 1px solid #aaa;
+  color: #666;
+  float: left;
+  font-size: 90%;
+  font-weight: bold;
+  line-height: 2em;
+  height: 2.15em;
+  margin-right: .8em;
+  padding: .2em 1em;
+  text-decoration: none;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+}
+.navlist a:link img, 
+.navlist a:visited img { 
+	height: 1.4em; 
+	margin-bottom: .6em; 
+	vertical-align: middle; 
+}
+.navlist a:link.current,
+.navlist a:visited.current { 
+	background-color: #fff; 
+	border-bottom: 1px solid #fff; 
+	color: #000; 
+}
+.navlist a:hover { color: #00f; }
+.navlist ul a:hover { color: #f00 !important; }
+
+/* .navlist a:link.guardar se ubica en eboe.css */
+
+
+.navlist a.nopest {
+  margin: 0 .5em 0 1em;
+  padding: 1px 0 0 24px;
+  background: no-repeat 0% 50%;
+  min-height: 20px;
+  font-weight: normal;
+  color: blue;
+  border-width: 0;
+  text-decoration: underline;
+}
+.navlist a:hover.nopest {
+  color: red;
+}
+.navlist .puntoPDF  a { background-image: url(../imagenes/puntoPDF.gif) }/*firmados*/
+.navlist .puntoPDF2  a { background-image: url(../imagenes/puntoPDF2.gif) }/*NO firmados*/
+.navlist .puntoEpub  a { background-image: url(../imagenes/enlacesEpub.gif) }
+.navlist .puntoAyuda a { background-image: url(../imagenes/bkgAyuda.png) }
+
+
+
+.analisisDoc       { background:transparent; padding: 1em 0em 1em 0em; border-top: 1px solid #ccc; }
+.analisisDoc h3   { text-align: center; font-size: 1.5em; padding-top: 0em; padding-bottom: 0; margin-top: 0.2em; color: #123a63; }
+.analisisDoc h5 { border-top: 1px solid #ddd; padding: 0;}
+
+.analisisDoc ul li {
+  list-style-type : none;
+  list-style-position : outside;
+  list-style-image : url(../imagenes/rayaLi.gif);
+  padding: 0.1em 0;
+}
+.analisisDoc ul li ul li {
+  list-style-image : url(../imagenes/puntoLi.gif);
+}
+
+
+
+
+
+table.oculta        { margin: 0.5em 0 0 2em; padding: 0; border-collapse: collapse; border-spacing: 0; border: none; }
+table.oculta td     { margin: 0.15em 0; border: none; }
+table.oculta td.der { text-align: right; color: #123a63; font-weight: bold; padding: 0.15em 0.15em 0 0; }
+table.oculta td.izq { text-align: left; padding: 0.15em 0.3em 0 0.3em; }
+
+#formConsultas .bloqueBotones { text-align: right; margin: 1em }
+
+td form { margin: 0; padding: 0; }
+span.underline {
+    text-decoration: underline;
+}
